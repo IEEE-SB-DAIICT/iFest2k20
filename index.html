@@ -19,7 +19,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>i.Fest '20 | Home Page</title>
-    <link rel="icon" href="./images/i.Fest_logo_newWhite.png" />
+    <link rel="icon" href="./images/i.Fest_logo_new.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -39,10 +39,7 @@
       href="https://fonts.googleapis.com/css?family=Raleway:400,500"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -136,7 +133,7 @@
           <nav id="menu" style="z-index: 20">
             <a href="./index.html">Home</a>
             <a href="./event/event.html">Events</a>
-            <!--<a href="./workshops.html">Workshops</a>-->
+            <a href="./openbox.html">The Open Box</a>
             <a href="./team.html">Team</a>
             <!-- <a href="https://ifestbackend.herokuapp.com/#/login">Login</a>
             <a href="./register.html">Register</a> -->
@@ -347,6 +344,21 @@
               </ul>
             </div>
             <br /><br />
+            <div style="color: white; padding-bottom: 5px">
+              <h2 style="color: white">Register for i.Fest'20 here:</h2>
+            </div>
+            <form>
+              <script
+                src="https://checkout.razorpay.com/v1/payment-button.js"
+                data-payment_button_id="pl_FwiYiEY9P0z5Mu"
+              ></script>
+            </form>
+            <form>
+              <script
+                src="https://checkout.razorpay.com/v1/payment-button.js"
+                data-payment_button_id="pl_Fwimz5AtxgwZuN"
+              ></script>
+            </form>
             <a href="http://ifest.daiict.ac.in/tic-tech-toe" target="_blank">
               <img id="tictechtoelogo" src="images/tictechtoelogo.png" />
             </a>
@@ -393,9 +405,6 @@
         class="fullpage fullpage-scroll"
         data-section-name="tic-tech-toe"
       >
-        <!--<div class="aboutuswrapper">
-                <div class="clip-text clip-text_six" id="aboutImage"><img src="./home/about.jpg"></div>
-            </div> -->
         <div class="img-wrap"><img src="images/TicTechToePoster.png" /></div>
       </div>
 
@@ -485,6 +494,15 @@
                   ></a>
                 </li>
               </ul>
+              <br />
+              <p style="color: white">
+                To visit i.Fest'19 Website, please click
+                <a
+                  href="http://ifest.daiict.ac.in/ifest19"
+                  style="text-decoration: none"
+                  >here</a
+                >
+              </p>
 
               <!-- <div
                 class="row"
@@ -539,7 +557,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r67/three.min.js"></script>
 
     <script>
-      let max_particles = 2500;
+      let max_particles = 1800;
       let particles = [];
       let frequency = 10;
       let init_num = max_particles;
@@ -576,7 +594,7 @@
 
           this.point_of_attraction = {
             x: $(window).width() / 2,
-            y: $(window).height() / 2,
+            y: $(window).height() / 2 - $(window).height() / 6,
           };
 
           if (Math.random() > 0.5) {
@@ -672,7 +690,7 @@
 
       function clear() {
         canvas.globalAlpha = 0.08;
-        canvas.fillStyle = '#110031';
+        canvas.fillStyle = '#000000';
         canvas.fillRect(0, 0, tela.width, tela.height);
         canvas.globalAlpha = 1;
       }
