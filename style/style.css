@@ -365,6 +365,7 @@ main .content {
     /* max-width: 40px;
         max-height: 40px; */
     margin-top: 10px;
+    margin-bottom: 30px;
   }
 }
 
@@ -513,10 +514,15 @@ main .content {
 
 /* Logo */
 
+.main-agile {
+  margin-bottom: 70px;
+}
+
 .logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
   width: 115px;
   height: 115px;
   /* width: 50px;
