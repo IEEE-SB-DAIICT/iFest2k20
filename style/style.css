@@ -261,8 +261,9 @@ main .content {
 }
 
 #tictechtoelogo {
-  height: 8vw;
-  max-width: 70%;
+  height: 4vw;
+  max-width: 60%;
+  margin-top: 1.8vw;
 }
 
 /* 
