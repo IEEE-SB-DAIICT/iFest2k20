@@ -269,6 +269,12 @@ body {
     display: none;
 }
 
+@media(min-width:768px) {
+    .clubList li{
+        display:inline;
+    }
+}
+
 @media(max-width: 768px) {
     .clubs {
         position: relative;
