@@ -59,10 +59,15 @@ function countDownTimer() {
   timeToLaunch();
 
   // Write to countdown component
-  $('#days .number').text(days);
+  /* $('#days .number').text(days);
   $('#hours .number').text(hrs);
   $('#minutes .number').text(min);
-  $('#seconds .number').text(sec);
+  $('#seconds .number').text(sec); */ /* Remove this commented part and 4 lines below here to start timer */
+  /* Make All Zero */
+  $('#days .number').text("0");
+  $('#hours .number').text("0");
+  $('#minutes .number').text("0");
+  $('#seconds .number').text("0");
 
   // Repeat the check every second
   setTimeout(countDownTimer, 1000);
